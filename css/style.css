@@ -4,28 +4,46 @@
     padding: 0;
     margin: 0;
     text-decoration: none;
+    box-sizing: border-box;
 }
 
 body {
     width: 100%;
-    background-color: gray;
+    background-color: black;
+}
+
+.fundo-content img {
+    display: flex;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+@media (max-width: 800px) {
+    .fundo-content img {
+        width: 800px;
+    }
+    
 }
 
 .login-content {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    justify-content: space-around;
     width: 300px;
-    height: 400px;
-    padding: 10px;
+    padding: 20px;
     background-color: white;
     border-radius: 10px;
     margin: 100px auto;
+    box-shadow: 0 0 4px 2px white;
+    z-index: 1;
 }
 
 .bemvindo-logo {
     color: black;
-    font-size: 40px;
+    font-size: 45px;
     font-family: 'Stick No Bills', sans-serif;
     font-weight: 600;
     text-align: center;
@@ -38,7 +56,7 @@ body {
 }
 
 .bemvindo-title {
-    font-size: 30px;
+    font-size: 35px;
     font-family: 'Roboto', sans-serif;
     text-align: center;
 }
@@ -48,12 +66,20 @@ body {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     text-align: center;
+    padding: 5px;
+}
+
+.form-content {
+    display: flex;
+    padding: 5px;
+    flex-direction: column;
+    
 }
 
 .form-content label{
     font-family: 'Roboto', sans-serif;
-    font-size: 13px;
-    padding-top: 9px;
+    font-size: 14px;
+    padding: 10px 0;
 }
 
 .form-content span {
@@ -64,6 +90,78 @@ body {
 }
 
 .input-wid {
-    width: 270px;
-    height: 20px;
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    font-size: 11px;
+    border: none;
+    border-radius: 4px;
+    background-color: #d9e2e5;
+    padding: 7px;
 }
+
+.lembre-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+}
+
+.lembre {
+    display: flex;
+}
+
+.botoes-content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px;
+}
+
+.botoes {
+    display: flex;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: black;
+    margin: 0 5px;
+    background-color: #84fab0;
+    transition: 0.4s;
+}
+
+.botoes:hover {
+    cursor: pointer;
+    background-color: greenyellow;
+}
+
+.conecte-content {
+    display: flex;
+    padding: 5px 0;
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+.icon-content {
+    display: flex;
+    padding: 7px;
+    justify-content: space-around;
+}
+
+.criador {
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.criador p{
+    display: flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    color: black;
+    border-bottom: 1px solid black;
+}
+
+

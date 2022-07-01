@@ -10,6 +10,11 @@
     <title>Entrar | Dev++</title>
 </head>
 <body>
+
+    <div class="fundo-content">
+        <img src="./img/img-fundo.jpg" alt="">
+    </div>
+
     <div class="login-content">
         <div class="bemvindo-content">
             <h1 class="bemvindo-logo">Dev++</h1>
@@ -20,43 +25,49 @@
         <div class="form-content">
             <form action="">
                 <div>
-                    <label for="email">E-mail:<span>*</span></label><br>
-                    <input type="email" required class="input-wid">
+                    <label for="email">E-mail<span>*</span></label><br>
+                    <input type="email" required class="input-wid" placeholder="digite seu e-mail">
                 </div>
                 <div>
-                    <label for="password">Senha:<span>*</span></label><br>
-                    <input type="password" required class="input-wid">
+                    <label for="password">Senha<span>*</span></label><br>
+                    <input type="password" required class="input-wid" placeholder="digite sua senha">
                 </div>
-                <div>
-                    <input type="checkbox" checked>
-                    <label for="lembre">Lembre de mim?</label>
+                
+                <div class="lembre-content">
+                    <div class="lembre">
+                        <input type="checkbox">
+                        <p>Lembre de mim?</p>
+                    </div>
                     <a href="#">Esqueceu a senha?</a>
                 </div>
-                <div>
-                    <button type="submit">Entrar</button>
-                    <a href="#">Cadastre-se</a>
+                
+                <div class="botoes-content">
+                    <button type="submit" class="botoes">Entrar</button>
+                    <a href="#" class="botoes">Cadastre-se</a>
                 </div>
                 
             </form>
 
-            <div>
+            <div class="conecte-content">
                 <p>Conecte-se com:</p>
             </div>
 
-            <div>
-                <a href="#"><img src="" alt="facebook"></a>
-                <a href="#"><img src="" alt="instagram"></a>
-                <a href="#"><img src="" alt="github"></a>
-                <a href="#"><img src="" alt="twiter"></a>
-                <a href="#"><img src="" alt="gmail"></a>
+            <div class="icon-content">
+                <a href="#"><img src="./img/icon-facebook.png" alt="facebook" width="20px"></a>
+                <a href="#"><img src="./img/icon-instagram.png" alt="instagram" width="20px"></a>
+                <a href="#"><img src="./img/icon-github.png" alt="github" width="20px"></a>
+                <a href="#"><img src="./img/icon-twitter.png" alt="twitter" width="20px"></a>
+                <a href="#"><img src="./img/icon-gmail.png" alt="gmail" width="20px"></a>
             </div>
 
-            <div>
-                <p>by<a href="#">Jesiel souza</a></p>
+            <div class="criador">
+                <p>by Jesiel souza</p>
             </div>
             
         </div>
-
     </div>
+
+    
+
 </body>
 </html>
